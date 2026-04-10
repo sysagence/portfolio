@@ -116,22 +116,22 @@
 
     <section class="section stats" aria-label="Statistics">
       <div class="container stats__grid">
+        <!-- Projects delivered & Happy clients: match live portfolio count in #projects -->
         <div class="stat reveal">
-          <span class="stat__value" data-target="120">0</span>
-          <span class="stat__suffix">+</span>
+          <span class="stat__value" data-target="5">0</span>
           <span class="stat__label">Projects delivered</span>
         </div>
         <div class="stat reveal">
-          <span class="stat__value" data-target="48">0</span>
+          <span class="stat__value" data-target="5">0</span>
           <span class="stat__label">Happy clients</span>
         </div>
         <div class="stat reveal">
-          <span class="stat__value" data-target="8">0</span>
+          <span class="stat__value" data-target="2">0</span>
           <span class="stat__suffix">+</span>
           <span class="stat__label">Years experience</span>
         </div>
         <div class="stat reveal">
-          <span class="stat__value" data-target="99">0</span>
+          <span class="stat__value" data-target="100">0</span>
           <span class="stat__suffix">%</span>
           <span class="stat__label">On-time delivery</span>
         </div>
@@ -255,63 +255,108 @@
           <span class="section__label">Portfolio</span>
           <h2 class="section__title">Projects</h2>
         </header>
-        <div class="projects__grid">
-          <article class="project-card reveal">
-            <a class="project-card__link" href="https://sysagence.github.io/ecoprowash1/" target="_blank" rel="noopener noreferrer" aria-label="EcoProwash — open live site (new tab)">
-              <div class="project-card__media">
-                <img class="project-card__img--contain" src="https://res.cloudinary.com/drga4ofcz/image/upload/v1775394670/logo_sq0wkf.png" alt="EcoProwash logo" width="800" height="500" loading="lazy" decoding="async">
-                <div class="project-card__overlay">
-                  <span class="project-card__view">Visit live site</span>
-                </div>
+        <p class="projects-marquee__hint reveal">Scrolls like Skills — hover or focus pauses; click a card to open the live site.</p>
+        <div class="projects-marquee reveal" role="region" aria-label="Portfolio projects">
+          <div class="projects-marquee__edge projects-marquee__edge--left" aria-hidden="true"></div>
+          <div class="projects-marquee__edge projects-marquee__edge--right" aria-hidden="true"></div>
+          <div class="projects-marquee__viewport">
+            <div class="projects-marquee__track">
+              <div class="projects-marquee__set">
+                <a class="projects-marquee__card" href="https://sysagence.github.io/ecoprowash1/" target="_blank" rel="noopener noreferrer">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="https://res.cloudinary.com/drga4ofcz/image/upload/v1775394670/logo_sq0wkf.png" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">EcoProwash</span>
+                    <span class="projects-marquee__desc">Industrial laundry for hotels &amp; hospitals — asymmetric nav, hygiene focus, contact flows.</span>
+                  </div>
+                </a>
+                <a class="projects-marquee__card" href="https://ilpapavero.wuaze.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="https://res.cloudinary.com/drga4ofcz/image/upload/v1775394461/logo_cdygad.png" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">Il Papavero</span>
+                    <span class="projects-marquee__desc">Brand-forward presence — elegant layout, clear navigation, contact-focused experience.</span>
+                  </div>
+                </a>
+                <a class="projects-marquee__card" href="https://stock-fabrics.wuaze.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="assets/images/project-stockfabrics.svg" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">Stock Fabrics</span>
+                    <span class="projects-marquee__desc">Textiles &amp; fabrics showcase — product-forward layout and strong brand presence.</span>
+                  </div>
+                </a>
+                <a class="projects-marquee__card" href="https://mourcup.wuaze.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="https://res.cloudinary.com/drga4ofcz/image/upload/v1775394579/morcup-logo_qgsztc.svg" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">Mourcup</span>
+                    <span class="projects-marquee__desc">Morocco &amp; FIFA World Cup 2030 — event narrative, organisation storytelling, cup-inspired identity.</span>
+                  </div>
+                </a>
+                <a class="projects-marquee__card" href="https://sysschool.wuaze.com/" target="_blank" rel="noopener noreferrer">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="assets/images/logoo.svg" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">SYS School</span>
+                    <span class="projects-marquee__desc">Learning platform — SYS-branded school experience, clear structure and resources.</span>
+                  </div>
+                </a>
               </div>
-              <div class="project-card__body">
-                <h3>EcoProwash</h3>
-                <p>Industrial laundry showcase for hotels &amp; hospitals — modern asymmetric nav, hygiene messaging, and contact flows.</p>
+              <div class="projects-marquee__set" aria-hidden="true">
+                <a class="projects-marquee__card" href="https://sysagence.github.io/ecoprowash1/" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="https://res.cloudinary.com/drga4ofcz/image/upload/v1775394670/logo_sq0wkf.png" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">EcoProwash</span>
+                    <span class="projects-marquee__desc">Industrial laundry for hotels &amp; hospitals — asymmetric nav, hygiene focus, contact flows.</span>
+                  </div>
+                </a>
+                <a class="projects-marquee__card" href="https://ilpapavero.wuaze.com/" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="https://res.cloudinary.com/drga4ofcz/image/upload/v1775394461/logo_cdygad.png" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">Il Papavero</span>
+                    <span class="projects-marquee__desc">Brand-forward presence — elegant layout, clear navigation, contact-focused experience.</span>
+                  </div>
+                </a>
+                <a class="projects-marquee__card" href="https://stock-fabrics.wuaze.com/" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="assets/images/project-stockfabrics.svg" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">Stock Fabrics</span>
+                    <span class="projects-marquee__desc">Textiles &amp; fabrics showcase — product-forward layout and strong brand presence.</span>
+                  </div>
+                </a>
+                <a class="projects-marquee__card" href="https://mourcup.wuaze.com/" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="https://res.cloudinary.com/drga4ofcz/image/upload/v1775394579/morcup-logo_qgsztc.svg" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">Mourcup</span>
+                    <span class="projects-marquee__desc">Morocco &amp; FIFA World Cup 2030 — event narrative, organisation storytelling, cup-inspired identity.</span>
+                  </div>
+                </a>
+                <a class="projects-marquee__card" href="https://sysschool.wuaze.com/" target="_blank" rel="noopener noreferrer" tabindex="-1">
+                  <div class="projects-marquee__thumb">
+                    <img class="projects-marquee__img" src="assets/images/logoo.svg" alt="" width="320" height="200" loading="lazy" decoding="async">
+                  </div>
+                  <div class="projects-marquee__body">
+                    <span class="projects-marquee__title">SYS School</span>
+                    <span class="projects-marquee__desc">Learning platform — SYS-branded school experience, clear structure and resources.</span>
+                  </div>
+                </a>
               </div>
-            </a>
-          </article>
-          <article class="project-card reveal">
-            <a class="project-card__link" href="https://ilpapavero.wuaze.com/" target="_blank" rel="noopener noreferrer" aria-label="Il Papavero — open live site (new tab)">
-              <div class="project-card__media">
-                <img class="project-card__img--contain" src="https://res.cloudinary.com/drga4ofcz/image/upload/v1775394461/logo_cdygad.png" alt="Il Papavero logo" width="800" height="500" loading="lazy" decoding="async">
-                <div class="project-card__overlay">
-                  <span class="project-card__view">Visit live site</span>
-                </div>
-              </div>
-              <div class="project-card__body">
-                <h3>Il Papavero</h3>
-                <p>Brand-forward web presence — elegant layout, clear navigation, and contact-focused experience.</p>
-              </div>
-            </a>
-          </article>
-          <article class="project-card reveal">
-            <a class="project-card__link" href="https://stock-fabrics.wuaze.com/" target="_blank" rel="noopener noreferrer" aria-label="Stock Fabrics — open live site (new tab)">
-              <div class="project-card__media">
-                <img src="assets/images/project-stockfabrics.svg" alt="Stock Fabrics logo" width="800" height="500" loading="lazy">
-                <div class="project-card__overlay">
-                  <span class="project-card__view">Visit live site</span>
-                </div>
-              </div>
-              <div class="project-card__body">
-                <h3>Stock Fabrics</h3>
-                <p>Textiles &amp; fabrics showcase — product-forward layout and clear brand presence.</p>
-              </div>
-            </a>
-          </article>
-          <article class="project-card reveal">
-            <a class="project-card__link" href="https://mourcup.wuaze.com/" target="_blank" rel="noopener noreferrer" aria-label="Mourcup — Morocco and FIFA World Cup 2030 (new tab)">
-              <div class="project-card__media">
-                <img class="project-card__img--contain" src="https://res.cloudinary.com/drga4ofcz/image/upload/v1775394579/morcup-logo_qgsztc.svg" alt="Mourcup — Morocco, FIFA World Cup 2030" width="800" height="500" loading="lazy" decoding="async">
-                <div class="project-card__overlay">
-                  <span class="project-card__view">Visit live site</span>
-                </div>
-              </div>
-              <div class="project-card__body">
-                <h3>Mourcup</h3>
-                <p>Morocco-rooted project around the FIFA World Cup 2030 — event narrative, organisation storytelling, and a bold cup-inspired identity.</p>
-              </div>
-            </a>
-          </article>
+            </div>
+          </div>
         </div>
       </div>
     </section>

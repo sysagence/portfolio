@@ -128,6 +128,53 @@
     });
   }
 
+  /* ---------- Navbar active link (scroll spy) ---------- */
+  function initNavScrollSpy() {
+    var sectionIds = ["home", "about", "skills", "services", "projects", "team", "contact"];
+    var links = document.querySelectorAll("#navMenu a.nav__link");
+    if (!links.length) return;
+
+    function headerOffset() {
+      var h = document.getElementById("header");
+      if (!h) return 96;
+      return h.getBoundingClientRect().height + 40;
+    }
+
+    function update() {
+      var pos = window.scrollY + headerOffset();
+      var current = "home";
+      for (var i = 0; i < sectionIds.length; i++) {
+        var el = document.getElementById(sectionIds[i]);
+        if (!el) continue;
+        var top = el.getBoundingClientRect().top + window.scrollY;
+        if (pos >= top) current = sectionIds[i];
+      }
+      for (var j = 0; j < links.length; j++) {
+        var a = links[j];
+        var href = a.getAttribute("href") || "";
+        var on = href === "#" + current;
+        a.classList.toggle("is-active", on);
+        if (on) a.setAttribute("aria-current", "location");
+        else a.removeAttribute("aria-current");
+      }
+    }
+
+    var ticking = false;
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(function () {
+          update();
+          ticking = false;
+        });
+      }
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
+    update();
+  }
+
   /* ---------- Smooth scroll for anchor links (respects reduced motion) ---------- */
   function initSmoothScroll() {
     document.addEventListener("click", function (e) {
@@ -360,6 +407,7 @@
   initLoader();
   initParticles();
   initNav();
+  initNavScrollSpy();
   initSmoothScroll();
   initReveal();
   initCounters();
